@@ -5,7 +5,6 @@ var results = {};
  ****************/
 
 targets = gon.sites;
-console.log(targets)
 
 /*************************
  * CONFIGURABLE SETTINGS *
@@ -209,8 +208,6 @@ function maybe_test_next() {
     document.getElementById('status').innerHTML = 'Tested ' + urls + ' individual URLs in ' + (en - st) + ' ms.';
 
     document.getElementById('btn').disabled = false;
-
-    console.log(results);
 
     $.ajax({
       type: 'POST',
