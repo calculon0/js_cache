@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* bundle install
 
-Things you may want to cover:
+* rake db:create
 
-* Ruby version
+* rake db:migrate
 
-* System dependencies
+* rake db:seed
 
-* Configuration
+* rackup
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* To keep the app urls up to date, I would create a script that runs (daily/weekly/monthly) that would pull the website, extract out all the js and css references, and compare them to historical copies to see which ones were the least likely to change
